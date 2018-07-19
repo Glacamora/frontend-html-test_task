@@ -1,0 +1,92 @@
+.header {
+  background-color: @white;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  div {
+    margin-top: 50px;
+    text-align: right;
+    p {
+      font-size: 16px;
+      color: #484745;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    a {
+      font-size: 31px;
+      color: #484745;
+      text-decoration: none;
+    }
+  }
+}
+
+.header__price {
+  font-size: 23px;
+  color: #f36240;
+  margin-top: 70px;
+  margin-left: 215px;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.header__nav-item {
+  list-style-type: none;
+  padding: 15px 0px;
+  border-right: 1px solid #5f6973;
+  width: 20%;
+  text-align: center;
+
+  &:nth-of-type(1) {
+    width: 21%;
+  }
+
+  &:nth-of-type(2) {
+    width: 21%;
+  }
+
+  &:nth-of-type(3) {
+    width: 22%;
+  }
+
+  &:nth-of-type(4) {
+    width: 17%;
+  }
+
+  &:nth-of-type(5) {
+    width: 19%;
+  }
+
+  &_active {
+    background-color: #7bc3d5;
+
+    a {
+    color: @white;
+    }
+  }
+
+  &:last-of-type {
+    border-right: 0;
+  }
+}
+
+.header__page-link {
+  text-decoration: none;
+  font-size: 24px;
+  color: #5f6973;
+  padding: 11px;
+}

@@ -1,0 +1,138 @@
+.price {
+  margin-top: 45px;
+  margin-bottom: 94px;
+
+  h1 {
+    font-size: 64px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
+}
+
+.price__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.price__recommendation {
+  padding: 25px;
+  background-color: @white;
+  width: 240px;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 25px;
+  margin-right: 25px;
+
+  p {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin-top: 15px;
+  }
+}
+
+.price__recommendation-link {
+  color: #8a8a8a;
+
+  &:hover {
+    color: @bright-orange;
+  }
+}
+
+.price__basic-wrapper {
+  background-color: #e1f0f8;
+}
+
+.price__product-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 60px;
+}
+
+.price__product {
+  span {
+    display: block;
+    margin-top: 45px;
+    margin-left: 45px;
+    color: #a6a6a6;
+    font-size: 18px;
+  }
+}
+
+.price__create {
+  background-color: @white;
+  padding: 25px 25px 70px;
+  width: 878px;
+  box-sizing: border-box;
+
+  h3 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 0;
+  }
+}
+
+.price__privilege {
+  padding-left: 15px;
+
+  li {
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    list-style-type: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: @bright-orange;
+      top: 5px;
+      left: -16px;
+    }
+  }
+}
+
+.pice__create-sort {
+  margin-left: 98px;
+
+  p {
+    &:nth-of-type(1) {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+
+    &:nth-of-type(2) {
+      width: 73%;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    display: block;
+    margin-top: 10px;
+    color: #8a8a8a;
+  }
+}

@@ -1,0 +1,79 @@
+.technology {
+  background-color: @white;
+  margin-top: 25px;
+  padding: 25px;
+  width: 878px;
+  box-sizing: border-box;
+
+  h3 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 0;
+
+    &:last-of-type {
+      margin-top: 25px;
+    }
+  }
+}
+
+.technology__lamination {
+  position: relative;
+  padding-left: 89px;
+  padding-right: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    top: -1px;
+    left: -2px;
+  }
+
+  &:nth-child(2):before {
+    background-image: url("../img/lamination_icon.png");
+  }
+
+  &:nth-child(3):before {
+    background-image: url("../img/tree_icon.png");
+  }
+
+  &:last-of-type {
+    margin-top: 27px;
+  }
+}
+
+.technology__list {
+  padding-left: 26px;
+  counter-reset: advantage 0;
+
+  li {
+    list-style-type: none;
+    margin-top: 15px;
+    padding-left: 27px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 6px;
+      left: -14px;
+      counter-increment: advantage 1;
+      content: counter(advantage) " ";
+      font-size: 20px;
+      color: #383838;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      border: 2px solid #383838;
+      border-radius: 50%;
+      top: 0;
+      left: -25px;
+    }
+  }
+}

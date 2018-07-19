@@ -1,0 +1,84 @@
+.reviews {
+  margin-top: 40px;
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.reviews__title {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.reviews__username {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.reviews__contract,
+.reviews__date {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #8a8a8a;
+}
+
+.reviews__rating {
+  margin-top: 11px;
+}
+
+.reviews__more {
+  font-size: 16px;
+  text-transform: lowercase;
+  color: @bright-orange;
+  text-decoration: none;
+  border-bottom: 1px solid @bright-orange;
+  padding-bottom: 2px;
+}
+
+.reviews__visible {
+  display: flex;
+  flex-direction: column;
+  background-color: @white;
+  padding: 40px 25px;
+  margin-top: 22px;
+}
+
+.reviews__view {
+  height: 47px;
+  overflow-y: hidden;
+
+  &_visible {
+    height: auto;
+  }
+}
+
+.reviews__expand {
+  font-size: 16px;
+  text-transform: lowercase;
+  position: relative;
+  color: @bright-orange;
+  text-decoration: none;
+  border-bottom: 1px dashed @bright-orange;
+  width: 19.2%;
+  padding-bottom: 2px;
+  margin-top: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/arrow-down_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+    top: 3px;
+    left: -20px;
+  }
+}
