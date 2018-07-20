@@ -1,5 +1,6 @@
 .reviews {
   margin-top: 40px;
+  
   div {
     display: flex;
     flex-direction: row;
@@ -9,7 +10,8 @@
 }
 
 .reviews__title {
-  font-size: 26px;
+  font-size: @font-size-h3;
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -49,13 +51,9 @@
 }
 
 .reviews__view {
-  height: 47px;
-  overflow-y: hidden;
-
-  &_visible {
-    height: auto;
-  }
+  margin-bottom: 0;
 }
+
 
 .reviews__expand {
   font-size: 16px;
@@ -64,7 +62,7 @@
   color: @bright-orange;
   text-decoration: none;
   border-bottom: 1px dashed @bright-orange;
-  width: 19.2%;
+  width: 19.5%;
   padding-bottom: 2px;
   margin-top: 15px;
   margin-left: 20px;

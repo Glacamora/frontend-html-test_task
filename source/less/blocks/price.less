@@ -19,9 +19,7 @@
 
 .price__wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .price__recommendation {
@@ -30,7 +28,7 @@
   width: 240px;
   box-sizing: border-box;
   float: left;
-  margin-top: 25px;
+  margin-top: 35px;
   margin-right: 25px;
 
   p {
@@ -56,10 +54,6 @@
   }
 }
 
-.price__basic-wrapper {
-  background-color: #e1f0f8;
-}
-
 .price__product-wrapper {
   display: flex;
   flex-direction: row;
@@ -70,23 +64,50 @@
 }
 
 .price__product {
-  span {
-    display: block;
-    margin-top: 45px;
-    margin-left: 45px;
-    color: #a6a6a6;
-    font-size: 18px;
+  display: block;
+}
+
+.price__product-hide {
+  display: none;
+}
+
+.price__color {
+  cursor: pointer;
+  max-width: 61px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.price__color-active {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/checkmark.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    top: 11px;
+    left: 12px;
   }
+}
+
+.price__product-name {
+  display: block;
+  margin-top: 45px;
+  margin-left: 45px;
+  color: #a6a6a6;
+  font-size: 18px;
 }
 
 .price__create {
   background-color: @white;
   padding: 25px 25px 70px;
-  width: 878px;
-  box-sizing: border-box;
 
   h3 {
-    font-size: 26px;
+    font-size: @font-size-h3;
     font-weight: 400;
     margin-top: 0;
   }
@@ -94,6 +115,8 @@
 
 .price__privilege {
   padding-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   li {
     position: relative;

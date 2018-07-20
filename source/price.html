@@ -10,7 +10,7 @@
       <header class="header">
         <div class="header__contacts">
           <a href="#">
-            <img src="../img/logo.png" width="233" height="122" alt="лого">
+            <img src="../img/logo.png" width="233" height="122" alt="Пластик и алюминии">
           </a>
           <a href="#" class="header__price">Рассчитать стоимость</a>
           <div>
@@ -70,7 +70,7 @@
                 <a href="#" class="price__recommendation-link">Остекление балконов и&nbsp;лоджий</a>
               </li>
               <li>
-                <a href="#" class="price__recommendation-link">Отделка и&nbsp;утепление&nbsp;балконов</a>
+                <a href="#" class="price__recommendation-link">Отделка и&nbsp;утепление балконов</a>
               </li>
               <li>
                 <a href="#" class="price__recommendation-link">Балконные блоки</a>
@@ -78,22 +78,14 @@
             </ul>
           </nav>
           <div class="price__wrapper">
-            <section class="price__basic-wrapper">
+            <section>
               <section class="price__create">
                 <h3>Создайте выразительный интерьер с цветными окнами REHAU</h3>
                 <div class="price__product-wrapper">
                   <div>
                     <div class="price__product">
-                      <img src="../img/door_ireland.png" width="198" height="353" alt="">
-                      <span>Ирландский дуб</span>
-                    </div>
-                    <div>
-                      <img>
-                      <span></span>
-                    </div>
-                    <div>
-                      <img>
-                      <span></span>
+                      <img src="../img/window_ireland.png" width="198" height="353" alt="Окно">
+                      <span class="price__product-name">Ирландский дуб</span>
                     </div>
                   </div>
                   <div class="pice__create-sort">
@@ -104,7 +96,27 @@
                     </ul>
                     <p>Подберите цвет для своих окон:</p>
                     <div>
-                      <img src="../img/color.png" alt="">
+                      <span class="price__color price__color-active" data-description="Ирландский дуб" data-filePath="../img/window_ireland.png">
+                        <img src="../img/window-ireland_icon.png" width="61" height="59" alt="">
+                      </span>
+                      <span class="price__color" data-description="Миланский орех" data-filePath="../img/window_milan.png">
+                        <img src="../img/milan-nut_icon.png" width="61" height="59" alt="">
+                      </span>
+                      <span class="price__color" data-description="Итальянский орех" data-filePath="../img/window_italian.png">
+                        <img src="../img/italian-nut_icon.png" width="61" height="59" alt="">
+                      </span>
+                      <span class="price__color" data-description="Беленый дуб" data-filePath="../img/window_white.png">
+                        <img src="../img/white-oak_icon.png" width="61" height="59" alt="">
+                      </span>
+                      <span class="price__color">
+                        <img src="../img/window_icon-5.png" width="61" height="59" alt="">
+                      </span>
+                      <span class="price__color">
+                        <img src="../img/window_icon-6.png" width="61" height="59" alt="">
+                      </span>
+                      <span class="price__color">
+                        <img src="../img/window_icon-7.png" width="61" height="59" alt="">
+                      </span>
                     </div>
                     <p>Больше 50 вариантов  цветов и фактур спрашивайте у наших замерщиков</p>
                     <button type="button" class="button button_price">Рассчитать со скидкой 70%</button>
@@ -128,13 +140,15 @@
               </section>
               <section class="reviews">
                 <div>
-                  <p class="reviews__title">Отзывы о цветных пластиковых окнах</p>
+                  <h3 class="reviews__title">Отзывы о цветных пластиковых окнах</h3>
                   <a href="#" class="reviews__more">Посмотреть еще отзывы</a>
                 </div>
                 <article class="reviews__visible">
                   <p class="reviews__username">Алена,</p>
+                  <!--Если в дальнейшем отзывы будут подтягиваться динамически, то значения договора и даты удобней загружать в отдельный тэг span-->
                   <p class="reviews__contract">Договор № <span class="reviews__contract-number">09.10.33512.13</span></p>
                   <p class="reviews__date">Дата размещения: <span class="reviews__date-number">13 декабря 2013 года</span></p>
+                  <!--скопированная иконка звёздочки - при шаблонизации смотреть на оценку пользователя и рисовать нужное количество звёздочек-->
                   <span class="reviews__rating">
                     <img src="../img/rate_icon.png" width="13" height="13" alt="">
                     <img src="../img/rate_icon.png" width="13" height="13" alt="">
@@ -144,17 +158,16 @@
                   </span>
                   <p class="reviews__view">Поставили нам окна во всей квартире.Все очень понравилось)))компания на 5+.
                     Все очень любезные,гибкая система скидок!!!буду советовать всем!!!Сервис был на высоте,во-первых с поставкой получилось быстрее,
-                    во-вторых два раза приезжал замерщик Алексей,ему большое спасибо... <br>Сервис был на высоте,во-первых с поставкой получилось быстрее,
-                    во-вторых два раза приезжал замерщик Алексей,ему большое спасибо Сервис был на высоте,во-первых с поставкой получилось быстрее,
-                    во-вторых два раза приезжал замерщик Алексей,ему большое спасибо</p>
+                    во-вторых два раза приезжал замерщик Алексей,ему большое спасибо...</p>
                   <a class="reviews__expand">Прочитать полностью</a>
                   <a href="#" class="button button_reviews">Оставить отзыв</a>
                 </article>
               </section>
-            </div>
-          </section>
+            </section>
+          </div>
         </section>
       </main>
     </div>
+    <script src="../js/scripts.min.js"></script>
   </body>
 </html>
